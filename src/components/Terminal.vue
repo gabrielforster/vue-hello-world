@@ -16,38 +16,4 @@ export default {
 }
 </script>
 
-<style scoped lang='scss'>
-
-.title{
-    margin-top: 2rem;
-    font-family: monospace;
-}
-
-div.cli{
-    margin-top: 1rem;
-    width: 70%;
-    padding: 1rem;
-
-    font-family: monospace;
-    background-color: #2e3646;
-    color: #ddd;
-    border-radius: 10px;
-
-    h3{
-        font-weight: 500;
-        font-size: 1rem;
-        font-style: italic;
-        margin: 12px 0 2px;
-    }
-
-    h3:first-child{
-        margin-top: 0;
-    }
-
-    p{
-        font-family: monospace;
-        font-size: 1rem;
-    }
-}
-
-</style>
+<style src='../assets/styles/App.scss' scoped lang='scss' />

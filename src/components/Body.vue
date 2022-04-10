@@ -28,39 +28,4 @@ export default {
 }
 </script>
 
-<style scoped lang='scss'>
-
-.bodyClass{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.body{
-    max-width: 65%;
-    margin: 7rem auto 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    img{
-        height: 5rem;
-        width: 5rem;
-    }
-}
-
-.content{
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-    h2{
-        line-height: 1.7rem;
-        font-family: Roboto Mono;
-    }
-}
-
-
-</style>
+<style src='../assets/styles/App.scss' scoped lang='scss' />
