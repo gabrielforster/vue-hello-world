@@ -3,37 +3,37 @@
         <div class="body">
             <img alt="Vue logo" src="../assets/logo.png">
             <div class="content">
-                <h2>This is my first project (attempt)<br> and a remider
-                    to new future projects using Vue.js !
+                <h2>
+                    This is my first project using Vue. <br>
+                    I'm coding it to learn Vue in practice, and
+                    to have a reminder when I need some Vue thing.
                 </h2>
             </div>
 
-            <div class="cli">
-                <h3>Install Vue.js</h3>
-                <p>npm install -g @vue</p>
-            </div>
+            <TerminalWindow />
+            
         </div>
     </div>
 </template>
 
 <script>
+import TerminalWindow from './Terminal.vue'
+
 export default {
-    name: 'BodyComponent'
+    name: 'BodyComponent',
+    components: {
+        TerminalWindow
+    }
+
 }
 </script>
 
-<style>
-
+<style scoped lang='scss'>
 
 .bodyClass{
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.body img{
-    height: 5rem;
-    width: 5rem;
 }
 
 .body{
@@ -43,6 +43,11 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    img{
+        height: 5rem;
+        width: 5rem;
+    }
 }
 
 .content{
@@ -50,21 +55,12 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-.content h2{
-    line-height: 2rem;
+    
+    h2{
+        line-height: 1.7rem;
+        font-family: Roboto Mono;
+    }
 }
 
-.cli{
-    margin-top: 1rem;
-    max-width: 50%;
-    padding: 1rem;
-
-    font-family: monospace;
-    background-color: #2e3646;
-    color: #ddd;
-    border-radius: 10px;
-    min-width: 90%;
-}
 
 </style>
